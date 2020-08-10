@@ -1,0 +1,18 @@
+#ifndef CALCULATOR_H
+#define CALCULATOR_H
+
+#include <iostream>
+#include <string>
+#include <stdio.h>
+using namespace std;
+
+class Calculator{
+
+	public:
+		void start();
+		bool check_match(string);
+		string infix_postfix(string);
+		void evaluate_postfix(string);
+		int priority(char);
+};
+#endif
